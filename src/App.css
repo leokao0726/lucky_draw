@@ -1,3 +1,15 @@
+.body {
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", sans-serif !important;
+}
+
+.title {
+  font-weight: bolder;
+}
+
+.draw {
+  font-size: small !important;
+}
+
 .App {
   text-align: center;
   background-color: #25B2BD;
@@ -9,6 +21,15 @@
   background-attachment: fixed;
 }
 
+.lucky-man {
+  background-image: url('../src/kkday_logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff !important;
+  line-height: 1.8 !important;
+}
+
 .layout {
   display: flex;
   flex-direction: column;
@@ -17,15 +38,20 @@
   min-height: 100vh;
 }
 
+.text-area-layout {
+  position: relative;
+  height: 450px;
+}
+
+textarea.form-control {
+  height: 450px !important;
+}
+
 .content {
   display: flex;
   flex-direction: row;
   align-items: center;
   align-content: center;
-}
-
-textarea {
-  text-size-adjust: 8px;
 }
 
 .mr-40 {
@@ -36,18 +62,20 @@ textarea {
   margin-bottom: 20px;
 }
 
-.mt-20 {
-  margin-top: 20px;
-}
-
 .btn {
   padding: 20px;
 }
 
+.candidate-number {
+  color: #FEBC13;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
 .choose-input {
   font-size: 10px;
-  margin: auto 0 auto 20px;
-  width: 200px;
+  margin: auto 20px auto 0px;
+  width: 80px;
   padding: 0.375rem 0.75rem;
   border-radius: 0.25rem;
   text-align: center;
